@@ -1,20 +1,12 @@
-"use client";
-
-import { useState } from "react";
+import { Button } from "../../components/Count";
 
 export default function Home() {
-  const [count, setCount] = useState(0);
   return (
     <div>
-      Good
-      <button
-        onClick={() => {
-          setCount((c) => c + 1);
-        }}
-      >
-        Click
-        {count}
-      </button>
+      hello
+      <Button />
     </div>
   );
 }
+
+// The last node of my tree is a client component everything else is server side components.
